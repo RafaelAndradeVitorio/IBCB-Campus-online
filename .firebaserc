@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "interacao-ibcb"
+  },
+  "targets": {
+    "interacao-ibcb": {
+      "hosting": {
+        "IBCB-Campus-online": [
+          "ibcbcampusonline"
+        ]
+      }
+    }
+  }
+}

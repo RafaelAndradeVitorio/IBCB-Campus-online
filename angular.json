@@ -100,8 +100,21 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "IBCB-Campus-online:build:production",
+            "firebaseProject": "interacao-ibcb",
+            "firebaseHostingSite": "ibcbcampusonline"
+          }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "f6ec6279-99a2-4c85-a291-15a2d0c0029d"
   }
 }
