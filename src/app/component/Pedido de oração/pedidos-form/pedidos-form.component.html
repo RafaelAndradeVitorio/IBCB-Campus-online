@@ -1,0 +1,14 @@
+<form #loginForm="ngForm" (ngSubmit)="criarPedido(loginForm.value)" >
+  <div class="main">
+    <div class="input-fields">
+      <input name="name" ngModel placeholder="Name" id="name" type="text" class="input-field" />
+    </div>
+    <div class="input-fields">
+      <input name="pedido" ngModel placeholder="Faça seu pedido" id="pedido" type="text" class="input-field" />
+    </div>
+    <div class="input-fields">
+      <input name="numero" ngModel placeholder="numero" id="numero" type="tel" class="input-field" />
+    </div>
+    <button> Enviar </button>
+  </div>
+</form>
