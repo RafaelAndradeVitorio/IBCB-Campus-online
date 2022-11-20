@@ -1,23 +1,113 @@
+$pri:#FF6C11;
+$sec:#faedcd;
+$ter:#37039F;
+$btn: #84a98c;
+$fontc:#262725;
+
+
+.formulario{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  background: $pri;
+  align-items: center;
+
+}
+.input-fields-data{
+  display: none;
+}
 .main {
   display: flex;
   height: 100vh;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 30vw;
+  height: 40vh;
+  background: $sec;
+  padding: 10px 0px;
+  align-items: center;
+  border-radius: 25px;
 }
 
-.input-fields{
-  margin: 10px;
-}
-
-.input-field{
-  width: 300px;
-  height: 20px;
-}
-
-button{
-  width: 100px;
+.enviar{
+  background: $btn;
+  color: $ter;
+  font-weight: bold;
+  border: none;
+  margin: 5px 30px;
   height: 40px;
-  margin: 10px;
+  width: 40%;
+  font-size: 15px;
+  padding: 2px 13px;
+  border-radius: 15px;
+  transition: 500ms;
   cursor: pointer;
+}
+
+div#input-field {
+  background-color: $ter;
+}
+
+.input-fields {
+  width: 60%;
+}
+
+input, textarea, select {
+  background: $sec;
+  border: 1px solid #cfcfcf;
+  margin: 5px 0px;
+  height: 40px;
+  width: 97%;
+  font-size: 15px;
+  padding: 2px 13px;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+
+input::placeholder, select::placeholder, textarea::placeholder {
+  align-items: center;
+  padding: 2px 4px;
+  font-size: smaller;
+}
+
+input:active, select:active, textarea:active {
+  border: none;
+}
+
+small {
+  align-self: flex-start;
+  padding-left: 20px;
+}
+
+button:hover {
+  box-shadow: 1px 1px 5px $ter;
+}
+textarea{
+  padding-top: 10px ;
+}
+
+@media screen and (max-width: 760px) {
+
+  .main{
+    width: 97vw;
+    height: 70vh;
+  }
+  input, select, textarea{
+    height: 56px;
+    font-size: 25px;
+  }
+  .enviar{
+    width: 58%;
+  }
+}
+@media screen and (max-width: 760px){
+  input, select, textarea{
+    font-size: 22px;
+  }
 }
