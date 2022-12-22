@@ -1,0 +1,31 @@
+
+
+
+    <form class="formulario" #loginForm="ngForm" (ngSubmit)="criarPosicionamento(loginForm.value)" >
+      <div class="main" id="input-field">
+        <div class="iconOption">
+          <div class="opcao">
+            <div class="bgOption"> <img class="posicionamentoLogo" src="../../../assets/posicionamento.png" alt="Posicionamento"> </div>
+            Posicionamento</div>
+        </div>
+
+        <div class="input-fields">
+          <input name="name" ngModel placeholder="Name" id="name" type="text" class="input-field" />
+        </div>
+        <div class="input-fields">
+          <select name="categoria" ngModel id="categoria">
+              <option value="" class="placeSelect"  disabled selected> Selecione o seu posicionamento </option>
+              <option value="Conversao">Aceito Jesus</option>
+              <option value="Reconciliacao">Quero me reconciliar com Deus</option>
+          </select>
+      </div>
+        <div class="input-fields-data">
+          <input name="data" ngModel placeholder="data" id="data" type="tel" class="input-field" [(ngModel)]="myDate"/>
+        </div>
+        <div class="input-fields">
+          <input mask="(00) 90000-0000" name="numero" ngModel id="numero" placeholder="Número" type="datetime" class="input-field" />
+        </div>
+        <button class="enviar"> Enviar </button>
+      </div>
+      </form>
+

@@ -1,8 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400&display=swap');
+
 *{
   padding: 0;
   margin: 0;
+  font-family: 'Unbounded', cursive;
 }
 
-body{
+app-home{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+}
+
+app-header{
+ position: fixed;
+}
+
+$pri:#FF6C11;
+$sec:#faedcd;
+$ter:#585AF9;
+$btn: #84a98c;
+$fontc:#262725;
+
+// Geral
+.main {
+  background: #585AF9;
+  display: flex;
+  /* height: 100vh; */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 30vw;
+  /* max-height: 299px; */
+  padding: 79px 0px;
+  align-items: center;
+  border-radius: 25px;
+  padding-top: 10pxs;
+  padding-bottom: 7px;
+  position: relative;
+}
+.iconOption{
+  display: flex;
+  justify-content: center;
+  padding-top: 0;
+  padding-bottom: 20px;
+  position: absolute;
+  top: -45px;
+}
+.opcao{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+img.pedidoLogo, img.aconselhamentoLogo, img.celulasLogo, img.posicionamentoLogo{
+  max-width: 70px;
+}
+
+.formulario{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-fields-data{
+  display: none;
+}
+
+.enviar{
+  background: $btn;
+  color: $ter;
+  font-weight: bold;
+  border: none;
+  margin: 5px 30px;
+  min-height: 40px;
+  width: 57%;
+  font-size: 15px;
+  padding: 2px 13px;
+  border-radius: 15px;
+  transition: 500ms;
+  cursor: pointer;
+}
+
+.input-fields {
+  width: 60%;
+}
+
+input, textarea, select {
+  background: $sec;
+  border: 1px solid #cfcfcf;
+  margin: 5px 0px;
+  height: 40px;
+  width: 97%;
+  font-size: 15px;
+  padding: 2px 13px;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+
+input::placeholder, select::placeholder, textarea::placeholder {
+  align-items: center;
+  padding: 2px 4px;
+  font-size: smaller;
+}
+
+input:active, select:active, textarea:active {
+  border: none;
+}
+
+small {
+  align-self: flex-start;
+  padding-left: 20px;
+}
+
+button:hover {
+  box-shadow: 1px 1px 5px $ter;
+}
+textarea{
+  padding-top: 10px ;
+}
+
+
+.bgOption{
   background-color: #FF6C11;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+// home
+img.pedidoLogo img.aconselhamentoLogo img.celulasLogo img.posicionamentoLogo{
+  max-width: 70px;
+}
+
+// footer
+app-footer{
+  height: 200px;
+}
+
+app-header{
+ background: transparent;
+}
+
+@media screen and (max-width: 760px) {
+
+  .main{
+    width: 97vw;
+    height: 70vh;
+  }
+  input, select, textarea{
+    height: 56px;
+    font-size: 25px;
+  }
+  .enviar{
+    width: 58%;
+  }
+}
+@media screen and (max-width: 760px){
+  input, select, textarea{
+    font-size: 22px;
+  }
 }

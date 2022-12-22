@@ -6,7 +6,7 @@ import { databaseInstanceFactory } from '@angular/fire/database/database.module'
 @Component({
   selector: 'app-pedidos-form',
   templateUrl: './pedidos-form.component.html',
-  styleUrls: ['./pedidos-form.component.scss', '../../../cores.scss']
+  styleUrls: ['./pedidos-form.component.scss', '../../../cores.scss', '../../../app.component.scss']
 })
 export class PedidosFormComponent {
    myDate = new Date(Date.now()).toDateString()

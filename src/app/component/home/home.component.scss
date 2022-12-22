@@ -1,0 +1,51 @@
+*{
+  font-family: 'Unbounded', cursive;
+  // font-weight: 200;
+}
+.main-home{
+  background-color: #585AF9;
+  text-align: center;
+  align-self: center;
+  box-sizing: border-box;
+  padding: 0 70px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img.pedidoLogo, img.aconselhamentoLogo, img.celulasLogo, img.posicionamentoLogo{
+  max-width: 70px;
+}
+
+.li{
+text-decoration: none ;
+}
+
+.opcoes{
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 100vw;
+  padding: 0 300px;
+}
+
+.opcao{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  a {
+    margin-bottom: 10px;
+}
+}
+.bgOption{
+  background-color: #FF6C11;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}

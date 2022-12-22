@@ -10,20 +10,33 @@ import { environment } from '../environments/environment';
 import { provideAnalytics,getAnalytics,ScreenTrackingService,UserTrackingService } from '@angular/fire/analytics';
 import { provideAuth,getAuth } from '@angular/fire/auth';
 import { provideDatabase,getDatabase } from '@angular/fire/database';
-import { PedidosFormComponent } from './component/Pedido de oração/pedidos-form/pedidos-form.component';
+import { PedidosFormComponent } from './component/Pedido-de-oração/pedidos-form/pedidos-form.component';
 import { FormsModule } from '@angular/forms';
-import { PedidosDetalhesComponent } from './component/Pedido de oração/pedidos-detalhes/pedidos-detalhes.component';
+import { PedidosDetalhesComponent } from './component/Pedido-de-oração/pedidos-detalhes/pedidos-detalhes.component';
 import { provideFunctions,getFunctions } from '@angular/fire/functions';
 import { provideMessaging,getMessaging } from '@angular/fire/messaging';
 import { providePerformance,getPerformance } from '@angular/fire/performance';
 import { provideRemoteConfig,getRemoteConfig } from '@angular/fire/remote-config';
 import { provideStorage,getStorage } from '@angular/fire/storage';
+import { HomeComponent } from './component/home/home.component';
+import { AconselhamentoComponent } from './component/aconselhamento/aconselhamento.component';
+import { NossasCelulasComponent } from './component/nossas-celulas/nossas-celulas.component';
+import { HeaderComponent } from './component/header/header.component';
+import { PosicionamentoComponent } from './component/posicionamento/posicionamento.component';
+import { FooterComponent } from './component/footer/footer.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     PedidosFormComponent,
-    PedidosDetalhesComponent
+    PedidosDetalhesComponent,
+    HomeComponent,
+    AconselhamentoComponent,
+    NossasCelulasComponent,
+    HeaderComponent,
+    PosicionamentoComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
