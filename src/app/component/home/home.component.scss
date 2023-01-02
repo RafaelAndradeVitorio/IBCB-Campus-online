@@ -3,7 +3,7 @@
   // font-weight: 200;
 }
 .main-home{
-  background-color: #585AF9;
+  background-image: url(../../../assets/fundo.png);
   text-align: center;
   align-self: center;
   box-sizing: border-box;
@@ -12,6 +12,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+p{
+  color: white;
 }
 
 img.pedidoLogo, img.aconselhamentoLogo, img.celulasLogo, img.posicionamentoLogo{

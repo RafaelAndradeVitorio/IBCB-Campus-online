@@ -9,5 +9,5 @@ export const environment = {
     appId: '1:914560459507:web:337b4ac79e798c23268d86',
     measurementId: 'G-9QH4D3VLYJ',
   },
-  production: false,
+  production: true,
 };
