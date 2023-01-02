@@ -7,7 +7,8 @@ import {addDoc, Firestore, collection, getDocs, doc, updateDoc,deleteDoc} from '
   styleUrls: ['./aconselhamento.component.scss', '../../app.component.scss']
 })
 export class AconselhamentoComponent implements OnInit {
-  myDate = new Date(Date.now()).toDateString()
+  myDate = new Date(Date.now()).toDateString();
+  banco = "aconselhamento"
 
   constructor(private firestore: Firestore) { }
 

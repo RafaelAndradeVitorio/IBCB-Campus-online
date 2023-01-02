@@ -9,7 +9,8 @@ import { databaseInstanceFactory } from '@angular/fire/database/database.module'
   styleUrls: ['./pedidos-form.component.scss', '../../../cores.scss', '../../../app.component.scss']
 })
 export class PedidosFormComponent {
-   myDate = new Date(Date.now()).toDateString()
+   myDate = new Date(Date.now()).toDateString();
+   banco = "pedidos";
 
   constructor(private firestore: Firestore ) {
   }

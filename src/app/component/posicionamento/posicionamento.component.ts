@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {addDoc, Firestore, collection, getDocs, doc, updateDoc,deleteDoc} from '@angular/fire/firestore';
+import { reload } from '@firebase/auth';
 
 @Component({
   selector: 'app-posicionamento',
@@ -8,7 +9,8 @@ import {addDoc, Firestore, collection, getDocs, doc, updateDoc,deleteDoc} from '
 })
 export class PosicionamentoComponent implements OnInit {
 
-  myDate = new Date(Date.now()).toDateString()
+  myDate = new Date(Date.now()).toDateString();
+  banco = "posicionamentos";
 
   constructor(private firestore: Firestore ) {
   }
@@ -18,6 +20,7 @@ export class PosicionamentoComponent implements OnInit {
     const dbInstance = collection(this.firestore, `posicionamentos`);
     addDoc(dbInstance, value).then(()=> {
       alert('enviado')
+
     })
     .catch((err)=> {
       alert(err.message)

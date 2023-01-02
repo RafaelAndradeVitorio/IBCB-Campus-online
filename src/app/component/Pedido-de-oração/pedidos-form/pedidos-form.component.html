@@ -1,4 +1,4 @@
-<form class="formulario" #loginForm="ngForm" (ngSubmit)="criarPedido(loginForm.value)" >
+<form class="formulario" #form="ngForm" (ngSubmit)="criarPedido(form.value)" >
   <div class="main" id="input-field">
     <div class="iconOption">
       <div class="opcao">
@@ -22,6 +22,9 @@
     </div>
     <div class="input-fields-data">
       <input name="data" ngModel placeholder="data" id="data" type="tel" class="input-field" [(ngModel)]="myDate"/>
+    </div>
+    <div class="input-fields-data">
+      <input name="banco" ngModel placeholder="banco" id="banco" type="text" class="input-field" [(ngModel)]="banco"/>
     </div>
     <div class="input-fields">
       <input mask="(00) 90000-0000" name="numero" ngModel id="numero" placeholder="Número" type="datetime" class="input-field" />

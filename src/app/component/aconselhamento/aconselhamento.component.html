@@ -14,6 +14,9 @@
     <div class="input-fields">
       <input mask="(00) 90000-0000" name="numero" ngModel id="numero" placeholder="Número" type="datetime" class="input-field" />
     </div>
+    <div class="input-fields-data">
+      <input name="banco" ngModel placeholder="banco" id="banco" type="text" class="input-field" [(ngModel)]="banco"/>
+    </div>
     <button class="enviar"> Enviar </button>
   </div>
   </form>

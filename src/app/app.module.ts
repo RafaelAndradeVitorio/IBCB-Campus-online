@@ -1,5 +1,5 @@
 import { Firestore, provideFirestore,getFirestore } from '@angular/fire/firestore';
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FirestoreModule } from '@angular/fire/firestore';
 
@@ -24,6 +24,9 @@ import { NossasCelulasComponent } from './component/nossas-celulas/nossas-celula
 import { HeaderComponent } from './component/header/header.component';
 import { PosicionamentoComponent } from './component/posicionamento/posicionamento.component';
 import { FooterComponent } from './component/footer/footer.component';
+import {MatDialogModule} from '@angular/material/dialog';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 
 @NgModule({
@@ -43,6 +46,8 @@ import { FooterComponent } from './component/footer/footer.component';
     AppRoutingModule,
     FormsModule,
     FirestoreModule,
+    MatDialogModule,
+    BrowserAnimationsModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAnalytics(() => getAnalytics()),
     provideAuth(() => getAuth()),
@@ -57,6 +62,14 @@ import { FooterComponent } from './component/footer/footer.component';
   providers: [
     ScreenTrackingService,
     UserTrackingService
+  ],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA
+  ],
+  entryComponents:[
+   PosicionamentoComponent,
+   PedidosFormComponent,
+   AconselhamentoComponent
   ],
   bootstrap: [AppComponent]
 })
