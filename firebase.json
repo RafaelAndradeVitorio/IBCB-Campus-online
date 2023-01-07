@@ -4,6 +4,7 @@
   },
   "hosting": [
     {
+      "site": "ibcbcampusonline",
       "public": "public",
       "ignore": [
         "firebase.json",
